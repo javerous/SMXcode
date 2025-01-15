@@ -505,7 +505,7 @@ extension XcodeProject.RenderError: CustomStringConvertible
 fileprivate extension Scanner
 {
 	static let _keyCharSet = CharacterSet.alphanumerics.union(CharacterSet(charactersIn: "_."))
-	static let _stringCharSet = CharacterSet.alphanumerics.union(CharacterSet(charactersIn: "._/"))
+	static let _stringCharSet = CharacterSet.alphanumerics.union(CharacterSet(charactersIn: "._/$"))
 	
 	// MARK: Root
 	func scanRoot() throws -> XcodeDictionary
